@@ -16,34 +16,41 @@ header{
     background: #ebebeb;
     padding: 1px;
     margin: 5px;
+    width: 100%;
 }
 nav{
     background: #ebebeb;
     padding: 5px;
     margin: 5px;
+    width: 100%;
 }
 section{
     background: #ebebeb;
     width: 495px;
+    margin-top: 15px;
+    height: 300px;
 }
 aside{
     background: #ebebeb;
     float: right;
     width: 45%;
     margin-top: 15px;
-    padding: 50px;
+    height: 300px;
 }
 footer{
     background: #ebebeb;
     padding: 40px;
-    float: bottom;
+    float: right;
+    margin-top: 20px;
+    width: 100%;
 }
 article{
     color: #ebebeb;
     background-color: #777;
     border: 5px;
     height: 50px;
-    
+    float: left;
+    z-index: 2; 
 }
 h1{
     color: #777;
@@ -55,9 +62,20 @@ p{
     padding: 20px;
     margin: 20px;
     margin-top: 20px;
+    float: left;
 }
 h5{
     margin-bottom: 25px;
     margin: 5px;
     padding: 10px;
+    float: left;
+}
+#section-left {
+    float: left;
+}
+
+clearfix::after main {
+    content: "";
+    clear: both;
+    display: table;
 }
